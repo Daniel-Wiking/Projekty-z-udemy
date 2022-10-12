@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoper</title>
+    <link rel="stylesheet" href="p5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Special+Elite&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/09922e5361.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="p5.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p class="info">
+        <i class="fas fa-question"></i>
+        <i class="fas fa-question"></i>
+</p>
+<h1>Stoper</h1>
+<p class="stopwatch">0:00</p>
+<div class="select"><div class="color red"></div>
+<div class="color green"></div>
+<div class="color blue"></div></div>
+<p class="time">0:00</p>
+<div class="buttons">
+    <button class="start"><i class="fas fa-play"></i></button>
+    <button class="pause"><i class="fas fa-pause"></i></button>
+    <button class="stop"><i class="fas fa-stop"></i></button>
+    <button class="reset"><i class="fas fa-times"></i></button>
+    <button class="history">Archiwum</i></button>
+</div>
+<ul class="time-list"></ul>
+</div>
+<div class="modal-shadow">
+    <div class="modal">
+        <h3>Instrukcja</h3>
+        <p><i class="fas fa-play"></i> - start</p>
+        <p><i class="fas fa-pause"></i> - pauza</p>
+        <p><i class="fas fa-stop"></i> - zatrzymanie odliczania</p>
+        <p><i class="fas fa-times"></i> - kasowanie wszystkich odczytów (również z Archiwum!!)</p>
+        <p><strong>Archiwum</strong> - wgląd we wcześniej zarejestrowane czasy</p>
+        <button class="close">Zamknij</button>
+    </div>
+</div>
+    
+</body>
+
+</html>
