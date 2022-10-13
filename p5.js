@@ -10,8 +10,10 @@ const infoBtn = document.querySelector('.fa-question');
 const modalShadow = document.querySelector('.modal-shadow');
 const closeModalBtn = document.querySelector('.close');
 const colorChange = document.querySelector('.fa-paint-brush');
-const color = document.var(--default-color);
-color = 'blue';
+const select = document.querySelector('.select');
+const red = document.querySelector('.red');
+const green = document.querySelector('.green');
+const blue = document.querySelector('.blue');
 
 let countTime;
 let minutes=0;
@@ -95,6 +97,47 @@ modalShadow.style.display = 'block';
     modalShadow.classList.toggle('modal-animation')
  }
  
+
+
+
+var r = document.querySelector(':root');
+
+
+// function myFunction_get() {
+  
+//   var rs = getComputedStyle(r);
+//   // Alert the value of the --blue variable
+//   alert("The value of --blue is: " + rs.getPropertyValue('--default-color'));
+// }
+
+
+const greenColor =() =>{
+  
+  r.style.setProperty('--default-color', 'rgb(34, 234, 34)');
+  console.log('color changed to green');
+}
+const redColor =() =>{
+  
+    r.style.setProperty('--default-color', 'rgb( 234,34, 34)');
+    console.log('color changed to red');
+  }
+  const blueColor =() =>{
+  
+    r.style.setProperty('--default-color', 'rgb(34, 34, 234)');
+    console.log('color changed to blue');
+  }
+  const showColors = () =>{
+    if(select.style.display == 'none'){
+select.style.display = 'flex';}
+else{
+    select.style.display = 'none';
+}
+  }
+  colorChange.addEventListener('click',showColors)
+red.addEventListener('click',redColor);
+green.addEventListener('click',greenColor);
+blue.addEventListener('click',blueColor);
+
 
 
 startBtn.addEventListener('click',handleStart);
