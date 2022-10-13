@@ -1,7 +1,6 @@
 :root {
-    --first-color:#fa1406;
-    --second-color:#d2c7be;
-    --third-color:#;
+    --default-color:rgb(133,133,133);
+    
 
 }
 * {
@@ -38,7 +37,7 @@
                 right: 14px;
                 padding: 20px;
                 font-size: 24px;
-                color: var(--first-color);
+                color: var(--default-color);
                 
                 transition: color .3s;
 display:flex;
@@ -49,7 +48,7 @@ gap:10px;
 
             }
             .info:hover {
-                color:var(--first-color);
+                color:var(--default-color);
 
             }
             h1{
@@ -59,11 +58,11 @@ gap:10px;
             }
             .stopwatch {
                 font-size: 72px;
-                color: var(--first-color);
+                color: var(--default-color);
             }
             .time {
                 visibility:hidden;
-                color:var(--first-color);
+                color:var(--default-color);
                 font-size: 22px;
             }
             .buttons {
@@ -80,14 +79,14 @@ gap:10px;
                 color: #fff;
                 font-size: 22px;
                 background-color: transparent;
-                border: 1px solid var(--first-color);
+                border: 1px solid var(--default-color);
                 cursor: pointer;
                 border-radius: 5px;
                 transition: background-color .3s;
 
             }
             button:hover, button:focus {
-                background-color: var(--first-color);
+                background-color: var(--default-color);
                 outline: none;      
 
             }
@@ -100,7 +99,7 @@ gap:10px;
                 justify-content: center;
                 width: 300px;
                 font-size: 22px;
-                color:var(--second-color);
+                color:var(--default-color);
 
             }
             .fime-list span {
@@ -165,7 +164,7 @@ cursor: pointer;
 border-radius:30%;
             }
             .info i:hover{
-                box-shadow: 0 0 5px var(--first-color)
+                box-shadow: 0 0 5px var(--default-color)
             }
             .select {
                 position:absolute;
@@ -184,11 +183,25 @@ border-radius:30%;
     height: 30px;
     width: 30px;
     transition:box-shadow .5s;
-    background-color: var(--first-color);
+    
     
 }
-.select .color:hover{
-    box-shadow:0 0 15px var(--first-color);
-    
 
+.red {
+    background-color: rgb(234, 34, 34);
+}
+.red:hover {
+    box-shadow:0 0 15px rgb(234, 34, 34);
+}
+.green {
+    background-color: rgb(34, 234, 34);
+}
+.green:hover {
+    box-shadow:0 0 15px rgb(34, 234, 34);
+}
+.blue {
+    background-color: rgb(34, 34, 234);
+}
+.blue:hover {
+    box-shadow:0 0 15px rgb(34, 34, 234);
 }
