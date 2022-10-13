@@ -6,6 +6,7 @@ const resetBtn = document.querySelector('.reset');
 const stopwatch = document.querySelector('.stopwatch');
 const time = document.querySelector('.time');
 const timeList = document.querySelector('.time-list');
+<<<<<<< HEAD
 const infoBtn = document.querySelector('.fa-question');
 const modalShadow = document.querySelector('.modal-shadow');
 const closeModalBtn = document.querySelector('.close');
@@ -15,10 +16,17 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const blue = document.querySelector('.blue');
 const grey = document.querySelector('.grey');
+=======
+const infoBtn = document.querySelector('.info');
+const modalShadow = document.querySelector('.modal-shadow');
+const closeModalBtn = document.querySelector('.close');
+
+>>>>>>> sidebranch.p1
 
 let countTime;
 let minutes=0;
 let seconds=0;
+<<<<<<< HEAD
 let hours = 0;
 
 let timesArray = [];
@@ -27,6 +35,10 @@ let timesArray = [];
 
 const handleStart = () => {
     clearInterval(countTime);
+=======
+
+const handleStart = () => {
+>>>>>>> sidebranch.p1
 countTime = setInterval(() => {
 if(seconds<9){
 seconds++;
@@ -35,17 +47,23 @@ else if(seconds>=9 && seconds<59){
 seconds++;
 stopwatch.textContent = `${minutes}:${seconds}`
 }
+<<<<<<< HEAD
 else {
     minutes++;
 
     seconds = 0;
     stopwatch.textContent = `${minutes}:00`
+=======
+else{
+    seconds = 0;
+>>>>>>> sidebranch.p1
 }
 
 
 
 },1000)
 }
+<<<<<<< HEAD
 const handlePause = () => {
     clearInterval(countTime)
 }
@@ -152,3 +170,8 @@ closeModalBtn.addEventListener('click',showModal);
 
 
 window.addEventListener('click',e => e.target === modalShadow ? showModal() : false)
+=======
+
+startBtn.addEventListener('click',handleStart);
+
+>>>>>>> sidebranch.p1

@@ -1,6 +1,12 @@
 :root {
+<<<<<<< HEAD
     --default-color:rgb(170,170,170);
     
+=======
+    --first-color:#fa1406;
+    --second-color:#d2c7be;
+    --third-color:#;
+>>>>>>> sidebranch.p1
 
 }
 * {
@@ -37,6 +43,7 @@
                 right: 14px;
                 padding: 20px;
                 font-size: 24px;
+<<<<<<< HEAD
                 color: var(--default-color);
                 
                 transition: color .3s;
@@ -49,11 +56,21 @@ gap:10px;
             }
             .info:hover {
                 color:var(--default-color);
+=======
+                color: var(--first-color);
+                cursor: pointer;
+                transition: color .3s;
+
+            }
+            .info:hover {
+                color:var(--first-color);
+>>>>>>> sidebranch.p1
 
             }
             h1{
                 margin-bottom: 20px;font-size: 60px;
                 font-weight: lighter;
+<<<<<<< HEAD
 color:var(--default-color)
             }
             .stopwatch {
@@ -64,6 +81,18 @@ color:var(--default-color)
                 visibility:hidden;
                 color:var(--default-color);
                 font-size: 22px;
+=======
+
+            }
+            .stopwatch {
+                font-size: 72px;
+                color: var(--first-color);
+            }
+            .time {
+visibility:hidden;
+color:var(--first-color);
+font-size: 22px;
+>>>>>>> sidebranch.p1
             }
             .buttons {
                 display:flex;
@@ -79,14 +108,22 @@ color:var(--default-color)
                 color: #fff;
                 font-size: 22px;
                 background-color: transparent;
+<<<<<<< HEAD
                 border: 1px solid var(--default-color);
+=======
+                border: 1px solid var(--first-color);
+>>>>>>> sidebranch.p1
                 cursor: pointer;
                 border-radius: 5px;
                 transition: background-color .3s;
 
             }
             button:hover, button:focus {
+<<<<<<< HEAD
                 background-color: var(--default-color);
+=======
+                background-color: var(--first-color);
+>>>>>>> sidebranch.p1
                 outline: none;      
 
             }
@@ -99,7 +136,11 @@ color:var(--default-color)
                 justify-content: center;
                 width: 300px;
                 font-size: 22px;
+<<<<<<< HEAD
                 color:var(--default-color);
+=======
+                color:var(--second-color);
+>>>>>>> sidebranch.p1
 
             }
             .fime-list span {
@@ -122,8 +163,12 @@ color:var(--default-color)
                 height: 360px;
                 padding: 30px 60px;
                 border-radius:25px;
+<<<<<<< HEAD
                 background-image: radial-gradient(circle,rgb(143,144,146)0%,rgb(75,75,75)93%);
                 box-shadow: 0 0 5px rgb(65,65,65);
+=======
+                background-color: rgb(245,245,245);
+>>>>>>> sidebranch.p1
             }
             .modal h3 {
                 font-size: 30px;
@@ -138,6 +183,7 @@ color:var(--default-color)
                 display:block;
                 margin: 40px auto 0;
                 width: 200px;
+<<<<<<< HEAD
                 background-color: black;
                 transition: background-color .3s;
 
@@ -147,6 +193,14 @@ color:var(--default-color)
             }
             .modal i,.modal strong {
                 color:var(--default-color)
+=======
+                background-color: var(--first-color);
+                transition: background-color .3s;
+
+            }
+            .modal .close:hover {
+                background-color: rgb(226,36,26);
+>>>>>>> sidebranch.p1
             }
             .modal-animation {
                 animation: show-modal .5s;
@@ -159,6 +213,7 @@ color:var(--default-color)
                 100% {
                     opacity:1;
                 }
+<<<<<<< HEAD
             }
             .info i {
                 flex-basis:20px ;
@@ -220,3 +275,6 @@ border-radius:30%;
 .grey:hover {
     box-shadow:0 0 15px rgb(170, 170, 170);
 }
+=======
+            }
+>>>>>>> sidebranch.p1
