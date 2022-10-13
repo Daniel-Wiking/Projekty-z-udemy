@@ -1,5 +1,5 @@
 :root {
-    --default-color:rgb(133,133,133);
+    --default-color:rgb(170,170,170);
     
 
 }
@@ -122,7 +122,8 @@ color:var(--default-color)
                 height: 360px;
                 padding: 30px 60px;
                 border-radius:25px;
-                background-color: rgb(245,245,245);
+                background-image: radial-gradient(circle,rgb(143,144,146)0%,rgb(75,75,75)93%);
+                box-shadow: 0 0 5px rgb(65,65,65);
             }
             .modal h3 {
                 font-size: 30px;
@@ -137,12 +138,15 @@ color:var(--default-color)
                 display:block;
                 margin: 40px auto 0;
                 width: 200px;
-                background-color: var(--first-color);
+                background-color: black;
                 transition: background-color .3s;
 
             }
-            .modal .close:hover {
-                background-color: rgb(226,36,26);
+            .close:hover {
+                background-color: var(--default-color)
+            }
+            .modal i,.modal strong {
+                color:var(--default-color)
             }
             .modal-animation {
                 animation: show-modal .5s;
@@ -168,10 +172,10 @@ border-radius:30%;
             }
             .select {
                 position:absolute;
-                right:0;
+                right: 5px;;
                 background-color: transparent;
                 width: 60px;
-                height: 110px;
+                height: 140px;
                 display:flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -184,25 +188,35 @@ border-radius:30%;
     height: 30px;
     width: 30px;
     transition:box-shadow .5s;
-    
+    cursor: pointer;
     
 }
 
 .red {
-    background-color: rgb(234, 34, 34);
+    background-color: rgb(254, 50, 50);
+    box-shadow:0 0 5px rgb(254, 50, 50);
 }
 .red:hover {
-    box-shadow:0 0 15px rgb(234, 34, 34);
+    box-shadow:0 0 15px rgb(254, 50, 50);
 }
 .green {
     background-color: rgb(34, 234, 34);
+    box-shadow:0 0 5px rgb(34, 234, 34);
 }
 .green:hover {
     box-shadow:0 0 15px rgb(34, 234, 34);
 }
 .blue {
-    background-color: rgb(34, 34, 234);
+    background-color: rgb(50, 50, 254);
+    box-shadow:0 0 5px rgb(50, 50, 254);
 }
 .blue:hover {
-    box-shadow:0 0 15px rgb(34, 34, 234);
+    box-shadow:0 0 15px rgb(50, 50, 254);
+}
+.grey{
+    background-color: rgb(170, 170, 170);
+    box-shadow:0 0 5px rgb(170, 170, 170);
+}
+.grey:hover {
+    box-shadow:0 0 15px rgb(170, 170, 170);
 }

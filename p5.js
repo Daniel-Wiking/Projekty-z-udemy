@@ -14,6 +14,7 @@ const select = document.querySelector('.select');
 const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const blue = document.querySelector('.blue');
+const grey = document.querySelector('.grey');
 
 let countTime;
 let minutes=0;
@@ -100,15 +101,10 @@ modalShadow.style.display = 'block';
 
 
 
-var r = document.querySelector(':root');
+var r = document.documentElement;
 
 
-// function myFunction_get() {
-  
-//   var rs = getComputedStyle(r);
-//   // Alert the value of the --blue variable
-//   alert("The value of --blue is: " + rs.getPropertyValue('--default-color'));
-// }
+
 
 
 const greenColor =() =>{
@@ -137,7 +133,10 @@ else{
 red.addEventListener('click',redColor);
 green.addEventListener('click',greenColor);
 blue.addEventListener('click',blueColor);
+grey.addEventListener('click',()=>{
+    r.style.setProperty('--default-color', 'rgb(170,170,170)');
 
+})
 
 
 startBtn.addEventListener('click',handleStart);
