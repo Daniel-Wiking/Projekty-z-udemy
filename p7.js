@@ -6,5 +6,32 @@ const swapBtn = document.querySelector('.swap');
 const rateInfo = document.querySelector('.rate-info');
 
 const calculate = () => {
-    
+    fetch(`https://api.exchangerate.host/latest?base=${currencyOne.value}&symbols=${currencyTwo}`)
+.then(res =>res.json())
+.then(data => {
+const currency1 = currencyOne.value;
+const currency2 = currencyTwo.value;
+
+const rate = data.rates[currency2]
+
+rateInfo.textContent =`1 ${currency1} = ${rate.toFixed(4)}${currency2}`
+
+amountTwo.value = (amountOne.value*rate).toFixed(2);
+})
 }
+const changeCurrency = () => {
+    const initialCurrencyOne =currencyOne.value;
+    currencyOne.value =currencyTwo.value;
+    
+    currencyTwo.value = initialCurrencyOne;
+    calculate()
+}
+calculate()
+currencyOne.addEventListener('change',calculate);
+currencyTwo.addEventListener('change',calculate);
+amountOne.addEventListener('input',calculate);
+calculate();
+
+
+swapBtn.addEventListener('click',changeCurrency);
+
