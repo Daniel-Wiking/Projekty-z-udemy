@@ -24,35 +24,11 @@
             <div class="transaction-list">
                 <div class="income-area">
                     <h3>Przychód</h3>
-                    <div class="transaction" id="0">
-                        <p class="transaction-name"><i class="fas fa-money-bill-wave"></i>Wypłata</p>
-                        <p class="transaction-amount">2000zł
-                            <button class="delete"><i class="fas fa-times"></i></button>
-                        </p>
-                    </div>
+                  
                 </div>
                 <div class="expenses-area">
                     <h3>Wydatki</h3>
-                    <div class="transaction" id="0">
-                        <p class="transaction-name"><i class="fas fa-cart-arrow-down"></i>Zakupy</p>
-                        <p class="transaction-amount">-400zł
-                            <button class="delete"><i class="fas fa-times"></i></button>
-                        </p>
-                    </div>
-
-                    <div class="transaction" id="0">
-                        <p class="transaction-name"><i class="fas fa-hamburger"></i>Jedzenie</p>
-                        <p class="transaction-amount">-100zł
-                            <button class="delete"><i class="fas fa-times"></i></button>
-                        </p>
-                    </div>
-
-                    <div class="transaction" id="0">
-                        <p class="transaction-name"><i class="fas fa-film"></i>Kino</p>
-                        <p class="transaction-amount">-50zł
-                            <button class="delete"><i class="fas fa-times"></i></button>
-                        </p>
-                    </div>
+                    
 
                 </div>
             </div>
@@ -93,7 +69,7 @@
         <input type="number" id="amount">
         <label for="category">Wybierz kategorię</label>
         <small> "+" oznacza przychód a "-" oznacza wydatek</small>
-        <select name="" id="category">
+        <select name="" id="category" onchange="selectCategory()">
             <option value="noone" selected disabled></option>
             <option value="income">Przychód</option>
             <option value="shopping">Zakupy</option>
