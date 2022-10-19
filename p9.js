@@ -2,6 +2,7 @@ const settings= document.querySelector('.settings');
 const settingsBtn = document.querySelector('.settings-btn');
 const imageSection= document.querySelector('.image-section');
 
+
 const eventName = document.querySelector('.event-name');
 const eventDay = document.querySelector('.event-day');
 const eventMonth = document.querySelector('.event-month');
