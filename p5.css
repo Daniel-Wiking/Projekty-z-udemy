@@ -1,7 +1,12 @@
 :root {
+<<<<<<< HEAD
+    --default-color:rgb(170,170,170);
+    
+=======
     --first-color:#fa1406;
     --second-color:#d2c7be;
     --third-color:#;
+>>>>>>> sidebranch.p1
 
 }
 * {
@@ -38,6 +43,20 @@
                 right: 14px;
                 padding: 20px;
                 font-size: 24px;
+<<<<<<< HEAD
+                color: var(--default-color);
+                
+                transition: color .3s;
+display:flex;
+align-items: center;
+justify-content: space-between;
+gap:10px;
+
+
+            }
+            .info:hover {
+                color:var(--default-color);
+=======
                 color: var(--first-color);
                 cursor: pointer;
                 transition: color .3s;
@@ -45,11 +64,24 @@
             }
             .info:hover {
                 color:var(--first-color);
+>>>>>>> sidebranch.p1
 
             }
             h1{
                 margin-bottom: 20px;font-size: 60px;
                 font-weight: lighter;
+<<<<<<< HEAD
+color:var(--default-color)
+            }
+            .stopwatch {
+                font-size: 72px;
+                color: var(--default-color);
+            }
+            .time {
+                visibility:hidden;
+                color:var(--default-color);
+                font-size: 22px;
+=======
 
             }
             .stopwatch {
@@ -60,6 +92,7 @@
 visibility:hidden;
 color:var(--first-color);
 font-size: 22px;
+>>>>>>> sidebranch.p1
             }
             .buttons {
                 display:flex;
@@ -75,14 +108,22 @@ font-size: 22px;
                 color: #fff;
                 font-size: 22px;
                 background-color: transparent;
+<<<<<<< HEAD
+                border: 1px solid var(--default-color);
+=======
                 border: 1px solid var(--first-color);
+>>>>>>> sidebranch.p1
                 cursor: pointer;
                 border-radius: 5px;
                 transition: background-color .3s;
 
             }
             button:hover, button:focus {
+<<<<<<< HEAD
+                background-color: var(--default-color);
+=======
                 background-color: var(--first-color);
+>>>>>>> sidebranch.p1
                 outline: none;      
 
             }
@@ -95,7 +136,11 @@ font-size: 22px;
                 justify-content: center;
                 width: 300px;
                 font-size: 22px;
+<<<<<<< HEAD
+                color:var(--default-color);
+=======
                 color:var(--second-color);
+>>>>>>> sidebranch.p1
 
             }
             .fime-list span {
@@ -118,7 +163,12 @@ font-size: 22px;
                 height: 360px;
                 padding: 30px 60px;
                 border-radius:25px;
+<<<<<<< HEAD
+                background-image: radial-gradient(circle,rgb(143,144,146)0%,rgb(75,75,75)93%);
+                box-shadow: 0 0 5px rgb(65,65,65);
+=======
                 background-color: rgb(245,245,245);
+>>>>>>> sidebranch.p1
             }
             .modal h3 {
                 font-size: 30px;
@@ -133,12 +183,24 @@ font-size: 22px;
                 display:block;
                 margin: 40px auto 0;
                 width: 200px;
+<<<<<<< HEAD
+                background-color: black;
+                transition: background-color .3s;
+
+            }
+            .close:hover {
+                background-color: var(--default-color)
+            }
+            .modal i,.modal strong {
+                color:var(--default-color)
+=======
                 background-color: var(--first-color);
                 transition: background-color .3s;
 
             }
             .modal .close:hover {
                 background-color: rgb(226,36,26);
+>>>>>>> sidebranch.p1
             }
             .modal-animation {
                 animation: show-modal .5s;
@@ -151,4 +213,68 @@ font-size: 22px;
                 100% {
                     opacity:1;
                 }
+<<<<<<< HEAD
             }
+            .info i {
+                flex-basis:20px ;
+transition: box-shadow .5s;
+padding:5px;
+cursor: pointer;
+border-radius:30%;
+            }
+            .info i:hover{
+                box-shadow: 0 0 5px var(--default-color)
+            }
+            .select {
+                position:absolute;
+                right: 5px;;
+                background-color: transparent;
+                width: 60px;
+                height: 140px;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: display .5s;
+            }
+.select .color {
+
+    border-radius:50%;
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    transition:box-shadow .5s;
+    cursor: pointer;
+    
+}
+
+.red {
+    background-color: rgb(254, 50, 50);
+    box-shadow:0 0 5px rgb(254, 50, 50);
+}
+.red:hover {
+    box-shadow:0 0 15px rgb(254, 50, 50);
+}
+.green {
+    background-color: rgb(34, 234, 34);
+    box-shadow:0 0 5px rgb(34, 234, 34);
+}
+.green:hover {
+    box-shadow:0 0 15px rgb(34, 234, 34);
+}
+.blue {
+    background-color: rgb(50, 50, 254);
+    box-shadow:0 0 5px rgb(50, 50, 254);
+}
+.blue:hover {
+    box-shadow:0 0 15px rgb(50, 50, 254);
+}
+.grey{
+    background-color: rgb(170, 170, 170);
+    box-shadow:0 0 5px rgb(170, 170, 170);
+}
+.grey:hover {
+    box-shadow:0 0 15px rgb(170, 170, 170);
+}
+=======
+            }
+>>>>>>> sidebranch.p1

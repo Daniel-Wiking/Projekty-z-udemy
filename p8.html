@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09922e5361.js" crossorigin="anonymous"></script>
+    <script src="p8.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="p8.css">
+    <title>Currency exchange rate</title>
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-wallet"></i>Wallet</h1>
+        <p>Twój osobisty menedżer finansów</p>
+    </header>
+    <main>
+        <section class="transactions">
+            <div class="transaction-list">
+                <div class="income-area">
+                    <h3>Przychód</h3>
+                  
+                </div>
+                <div class="expenses-area">
+                    <h3>Wydatki</h3>
+                    
+
+                </div>
+            </div>
+
+        </section>
+        <section class="options">
+            <div class="">
+                <h2 class="title">Dostępne środki</h2>
+                <p class="available-money"></p>
+                
+            </div>
+            <div class="controls">
+                <button class="add-transaction"><i class="fas fa-plus"></i></button>
+                <button class="delete-all"><i class="fas fa-trash-can"></i></button>
+            </div>
+            <div class="style-selection">
+                <h2 class="title">Wybierz style</h2>
+                <div class="color-buttons">
+                    <button class="dark"></button>
+                    <button class="light"></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <div class="add-transaction-panel">
+
+        <h2 class="title">Dodaj nową transakcję</h2>
+
+        <label for="name" class="">Nazwa</label>
+        <small>(podaj nazwę)</small>
+        <input type="text" id="name">
+
+        <label for="amount" class="">Nazwa</label>
+        <small>(podaj kwotę transakcji, jeśli dodajesz wydatek- wpisz go z minusem)</small>
+        <input type="number" id="amount">
+        <label for="category">Wybierz kategorię</label>
+        <small> "+" oznacza przychód a "-" oznacza wydatek</small>
+        <select name="" id="category" onchange="selectCategory()">
+            <option value="noone" selected disabled></option>
+            <option value="income">Przychód</option>
+            <option value="shopping">Zakupy</option>
+            <option value="shopping">Jedzenie</option>
+            <option value="shopping">Kino</option>
+        </select>
+
+
+        <div class="panel-buttons">
+
+            <button class="save"><i class="fas fa-save"></i></button>
+            <button class="cancel"><i class="fas fa-window-close"></i></button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
